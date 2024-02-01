@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Monda:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Monda', sans-serif;
+}
+:root{
+    --bg-button-border: #FC6736;
+    --bg-body: #0C2D57;
+}
+
+body{
+    background-color: var(--bg-body);
+}
+
+.container{
+    width: 70vw;
+    margin: auto;
+}
+
+
+/* Logo - Header */
+
+.logo{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+
+/* Main */
+
+.main-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 60px;
+    width: 100%;
+}
+
+.left-side{
+    flex: 2;
+    height: 800px;
+    margin-right: 50px;
+}
+
+/*INPUT AREA */
+.text-input{
+    height: 80%;
+}
+
+#text-input-area{
+    width: 100%;
+    resize: none;
+    height: 100%;
+    background: transparent;
+    font-size: 20px;
+    color: white;
+    border: none;
+    outline: none;
+}
+
+#text-input-area::placeholder{
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+/* BUTTONS */
+
+
+.buttons button{
+    font-size: 18px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 700;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.buttons #cript-btn{
+    background-color: #FC6736;
+    border: none;
+    margin-right: 20px;
+}
+
+.buttons #descript-btn{
+    background-color: transparent;
+    border: 1px solid #FC6736;
+}
+
+/*INBOX MESSAGES */
+
+.right-side{
+    flex: 1;
+    border: 1px solid #FC6736;
+    height: 700px;
+    border-radius: 20px;
+    width: 100%;
+}
+
+#output{
+    height: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-search img{
+    width: 100%;
+}
+
+.text-search p{
+    color: white;
+    font-weight: 700;
+    text-align: center;
+}
+
+.btn-copiar{
+    background-color: black;
+    margin-top: -30%
+}
+
+
+
+@media screen and (max-width: 1021px){
+    .main-container{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 100px;
+        width: 100%;
+    }
+
+    #text-input-area{
+        height: 300px;
+        margin-bottom: 30px;
+    }
+
+    #text-input-area::placeholder{
+        text-align: center;
+    }
+    
+    .left-side{
+        margin-bottom: 100px;
+        margin-right: 0;
+    }
+
+    #output{
+        height: 400px;
+    }
+
+
+
+}
+
+
+@media screen and (max-width: 708px){
+    .buttons button{
+        font-size: 12px;
+    }
+
+
+    .left-side{
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 543px) {
+    .buttons{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    #text-input-area{
+        font-size: 12px;
+    }
+
+    #text-input-area::placeholder{
+        font-size: 12px;
+    }
+
+    
+    .buttons #cript-btn{
+        margin: 0;
+    }
+
+    .buttons button{
+        width: 100%;
+    }
+
+}

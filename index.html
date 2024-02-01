@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codificador</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <header>
+        <div class="container header">
+            <div class="logo">
+                <img src="assets/img/logo.png">
+            </div>
+            
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="main-container">
+                <section class="left-side">
+                    <div class="text-input">
+                        <textarea id="text-input-area" placeholder="Digite seu texto..."></textarea>
+                    </div>
+
+                    <div class="buttons">
+                        <button id="cript-btn" onclick="criptografar()">Criptografar</button>
+                        <button id="descript-btn" onclick="descriptografar()"> Descriptografar</button>
+                    </div>
+                </section>
+
+                <section class="right-side">
+                    <div id="output">
+                        <div class="image-search">
+                            <img src="assets/img/Search-rafiki.svg" alt="">
+                        </div>
+    
+                        <div class="text-search">
+                            <p>Não foi encontrado nenhuma mensagem</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
